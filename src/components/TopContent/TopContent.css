@@ -1,0 +1,49 @@
+.hello-text {
+  color: black;
+  font-size: 3em;
+  padding-top: 3em;
+  margin-bottom: 4em;
+}
+
+.name-container {
+  display: flex;
+}
+
+.name {
+  margin-left: 0.5em;
+  font-weight: bold;
+  color: orange;
+  padding-right: 0.25em;
+  box-shadow: 10px 10px;
+}
+
+.job {
+  margin-top: 0.5em;
+  color: gray;
+  font-family: "Console", "Courier New", monospace;
+}
+
+.contact-button {
+  border: none;
+  border: 1px solid orange;
+  background: orange;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.get-cv-button {
+  border: 1px solid orange;
+  margin-left: 1em;
+  background: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background: linear-gradient(to left, white 50%, orange 50%) right;
+  background-size: 200%;
+  transition: 0.25s ease-out;
+}
+
+.get-cv-button:hover {
+  background-position: left;
+}
