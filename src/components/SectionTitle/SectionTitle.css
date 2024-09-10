@@ -1,0 +1,10 @@
+.section-title-container {
+  width: fit-content;
+  font-size: 2em;
+  box-shadow: -5px -5px black;
+}
+
+.section-title {
+  padding: 0.25em 1em;
+  background-color: orange;
+}
