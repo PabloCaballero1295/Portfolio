@@ -11,13 +11,17 @@ function App() {
       <div className="container">
         <div id="home"></div>
         <TopContent />
-        <div id="about"></div>
+        <div className="scroll-to" id="about"></div>
         <About />
-        <div id="experience"></div>
+        <div className="scroll-to" id="experience"></div>
         <Experience />
-        <div id="projects">Proyectos</div>
+        <div className="scroll-to" id="projects">
+          Proyectos
+        </div>
 
-        <div id="contact">Contact</div>
+        <div className="scroll-to" id="contact">
+          Contact
+        </div>
       </div>
     </>
   )
