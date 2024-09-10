@@ -1,0 +1,18 @@
+.technology-list {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.job-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-size: 1.8em;
+}
+
+.job-time {
+  color: gray;
+  font-size: 0.9em;
+}

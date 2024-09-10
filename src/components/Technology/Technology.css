@@ -1,0 +1,12 @@
+.technology-container {
+  width: fit-content;
+
+  border-radius: 0.75em;
+  border: 1px solid black;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+}
+
+.technology-name {
+  font-weight: 500;
+}
