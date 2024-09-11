@@ -1,5 +1,6 @@
 import "./App.css"
 import { About } from "./components/About/About"
+import { Contact } from "./components/Contact/Contact"
 import { Experience } from "./components/Experience/Experience"
 import { NavBar } from "./components/NavBar/NavBar"
 import { Projects } from "./components/Projects/Projects"
@@ -18,10 +19,8 @@ function App() {
         <Experience />
         <div className="scroll-to" id="projects"></div>
         <Projects />
-
-        <div className="scroll-to" id="contact">
-          Contact
-        </div>
+        <div className="scroll-to" id="contact"></div>
+        <Contact />
       </div>
     </>
   )

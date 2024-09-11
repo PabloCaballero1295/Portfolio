@@ -1,0 +1,29 @@
+.contact-container {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.contact-img {
+  width: 5rem;
+  margin: auto;
+  margin-bottom: 0.8rem;
+}
+
+.contact-text {
+  margin: 2rem 0;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
