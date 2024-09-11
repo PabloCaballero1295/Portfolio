@@ -20,6 +20,14 @@ export const About = () => {
           generación procedimental de entornos exteriores para videojuegos 3D
         </a>{" "}
         utilizando el motor gráfico Unity.
+        <br />
+        <br />
+        Hablo español nativo y en cuanto al inglés me considero que tengo un
+        nivel medio. Soy una persona que consume mucho contenido audiovisual en
+        inglés y casi todas las consultas que uno puede hacer en internet las
+        hago en ese idioma. Además, he trabajado un par de años en el sector
+        turístico y he tenido que comunicarme con personas de diversas
+        nacionalidades haciendo uso del inglés.
       </div>
     </div>
   )

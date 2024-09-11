@@ -1,0 +1,43 @@
+.project-container {
+  display: flex;
+  width: 100%;
+}
+
+.project-image {
+  width: 15em;
+}
+
+.project-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 2em;
+}
+
+.project-name {
+  font-size: 2rem;
+  width: fit-content;
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+}
+
+.custom-button {
+  border: none;
+  border: 1px solid orange;
+  background: orange;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.github-button {
+  margin-left: 1rem;
+}

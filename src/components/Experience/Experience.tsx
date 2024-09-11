@@ -62,8 +62,10 @@ export const Experience = () => {
         <Technology name="SwiftUI" color="white" />
         <Technology name="Firebase" color="red" textColor="white" />
         <Technology name="NodeJs" color="lightgreen" />
+        {/*
         <Technology name="HTML" color="orange" />
         <Technology name="CSS" color="blue" textColor="white" />
+        */}
         <Technology name="JavaScript" color="yellow" />
         <Technology name="PugJs" color="brown" textColor="white" />
         <Technology name="Svelte" color="lightyellow" />
