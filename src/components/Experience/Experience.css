@@ -1,6 +1,7 @@
 .technology-list {
   display: flex;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .job-header {

@@ -41,3 +41,13 @@
 .github-button {
   margin-left: 1rem;
 }
+
+@media (width < 768px) {
+  .project-container {
+    flex-direction: column;
+  }
+  .project-image {
+    margin: auto;
+    margin-top: 1em;
+  }
+}

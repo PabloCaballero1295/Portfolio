@@ -20,3 +20,54 @@
   align-items: center;
   height: 100%;
 }
+
+.navbar-right-content-mobile {
+  font-size: 1.5em;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .navbar-content {
+    margin: 0 1em;
+  }
+
+  .navbar-right-content {
+    display: none;
+  }
+
+  .navbar-right-content-mobile {
+    display: block;
+  }
+}
+
+/*
+
+  MEDIA QUERIES
+
+  @media (width < 480px) {
+  .navbar {
+    background-color: yellow;
+  }
+}
+
+@media (480px <= width < 768px) {
+  .navbar {
+    background-color: green;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .navbar {
+    background-color: blue;
+  }
+}
+
+@media (1024px <= width <= 1200px) {
+  .navbar {
+    background-color: purple;
+  }
+}
+
+  
+*/

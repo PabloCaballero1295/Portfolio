@@ -1,0 +1,17 @@
+.dropdown-menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background-color: greenyellow;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
