@@ -1,5 +1,9 @@
 //import { SectionTitle } from "../SectionTitle/SectionTitle"
 import "./Contact.css"
+import email_icon from "../../assets/email.png"
+import phone_icon from "../../assets/phone.png"
+import linkedin_icon from "../../assets/linkedin_logo.webp"
+import github_icon from "../../assets/github-logo.png"
 
 export const Contact = () => {
   const openLinkedIn = () => {
@@ -19,22 +23,22 @@ export const Contact = () => {
       <div className="contact-title">Contacto</div>
       <div className="contact-flex">
         <div className="contact-box">
-          <img src="email.png" className="contact-img" />
+          <img src={email_icon} className="contact-img" />
           pablocaballero1295@gmail.com
         </div>
         <br />
         <div className="contact-box">
-          <img src="phone.png" className="contact-img" />
+          <img src={phone_icon} className="contact-img" />
           <div>+34 616 51 38 13</div>
         </div>
         <br />
         <div className="contact-box clickable" onClick={openLinkedIn}>
-          <img src="linkedin_logo.webp" className="contact-img" />
+          <img src={linkedin_icon} className="contact-img" />
           LinkedIn
         </div>
         <br />
         <div className="contact-box clickable" onClick={openGitHub}>
-          <img src="github-logo.png" className="contact-img" />
+          <img src={github_icon} className="contact-img" />
           GitHub
         </div>
       </div>

@@ -1,4 +1,7 @@
 import { SectionTitle } from "../SectionTitle/SectionTitle"
+
+import TFG_FILE from "../../assets/TFG_Pablo_Caballero.pdf"
+
 import "./About.css"
 
 export const About = () => {
@@ -17,7 +20,7 @@ export const About = () => {
         graduarme en ingeniería informática, concretamente en el itinerario de
         las tecnologías de la información. Mi trabajo de fin de Grado fue sobre
         la{" "}
-        <a href="/TFG_Pablo_Caballero.pdf" target="_blank">
+        <a href={TFG_FILE} target="_blank">
           generación procedimental de entornos exteriores para videojuegos 3D
         </a>{" "}
         utilizando el motor gráfico Unity.

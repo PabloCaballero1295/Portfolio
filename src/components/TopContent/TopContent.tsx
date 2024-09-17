@@ -1,8 +1,10 @@
 import "./TopContent.css"
 
+import PABLO_CABALLERO_CV from "../../assets/Pablo_Caballero_CV.pdf"
+
 export const TopContent = () => {
   const getCV = () => {
-    window.open("/Pablo_Caballero_CV.pdf", "_blank")
+    window.open(PABLO_CABALLERO_CV, "_blank")
   }
 
   const scrollToContact = () => {
