@@ -12,7 +12,7 @@
 .name {
   margin-left: 0.5em;
   font-weight: bold;
-  color: orange;
+  color: var(--color-orange);
   padding-right: 0.25em;
   box-shadow: 10px 10px;
 }
@@ -25,21 +25,21 @@
 
 .contact-button {
   border: none;
-  border: 1px solid orange;
-  background: orange;
-  padding: 1em;
+  border: 1px solid var(--color-orange);
+  background: var(--color-orange);
+  padding: 1em 1.5em;
   border-radius: 0.5em;
   cursor: pointer;
 }
 
 .get-cv-button {
-  border: 1px solid orange;
+  border: 1px solid var(--color-orange);
   margin-left: 1em;
   background: white;
-  padding: 1em;
+  padding: 1em 1.5em;
   border-radius: 0.5em;
   cursor: pointer;
-  background: linear-gradient(to left, white 50%, orange 50%) right;
+  background: linear-gradient(to left, white 50%, var(--color-orange) 50%) right;
   background-size: 200%;
   transition: 0.25s ease-out;
 }

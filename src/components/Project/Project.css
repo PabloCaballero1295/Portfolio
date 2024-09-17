@@ -1,6 +1,10 @@
 .project-container {
   display: flex;
-  width: 100%;
+  margin: auto;
+  box-shadow: 0 0 3px;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgb(250, 240, 221);
 }
 
 .project-image {
@@ -31,9 +35,9 @@
 
 .custom-button {
   border: none;
-  border: 1px solid orange;
-  background: orange;
-  padding: 1em;
+  border: 1px solid var(--color-orange);
+  background: var(--color-orange);
+  padding: 1em 2em;
   border-radius: 0.5em;
   cursor: pointer;
 }

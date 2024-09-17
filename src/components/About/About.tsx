@@ -13,9 +13,10 @@ export const About = () => {
         frameworks para realizar mi trabajo.
         <br />
         <br />
-        Conseguí mi grado de ingeniería informática en la universidad de La
-        Laguna, concretamente en el itinerario de las tecnologías de la
-        información. Mi trabajo de fin de Grado fue sobre la{" "}
+        Realicé mis estudios en la universidad de La Laguna donde logré
+        graduarme en ingeniería informática, concretamente en el itinerario de
+        las tecnologías de la información. Mi trabajo de fin de Grado fue sobre
+        la{" "}
         <a href="/TFG_Pablo_Caballero.pdf" target="_blank">
           generación procedimental de entornos exteriores para videojuegos 3D
         </a>{" "}

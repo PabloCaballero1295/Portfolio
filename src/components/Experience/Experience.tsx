@@ -20,10 +20,12 @@ export const Experience = () => {
       Bluetooth, y a partir de aquí se podían transferir a un bucket de AWS,
       donde se almacenaban en su correspondiente carpeta del grupo que se había
       asignado en el App.
+      {/*
       <div className="technology-list">
         <Technology name="AWS" color="orange" />
         <Technology name="React Native" color="lightblue" />
       </div>
+      */}
       <div className="job-header">
         <div className="job-title">Kode</div>
         <div className="job-time">Mayo 2021 - Enero 2023</div>
@@ -56,16 +58,14 @@ export const Experience = () => {
       propietario de un comercio y vender sus productos asi como personalizar
       algunos aspectos de la web, como los colores de los botones, barra de
       navigación o añadir su logo.{" "}
+      {/*
       <div className="technology-list">
         <Technology name="iOS" color="white" />
         <Technology name="Swift" color="white" />
         <Technology name="SwiftUI" color="white" />
         <Technology name="Firebase" color="red" textColor="white" />
         <Technology name="NodeJs" color="lightgreen" />
-        {/*
-        <Technology name="HTML" color="orange" />
-        <Technology name="CSS" color="blue" textColor="white" />
-        */}
+
         <Technology name="JavaScript" color="yellow" />
         <Technology name="PugJs" color="brown" textColor="white" />
         <Technology name="Svelte" color="lightyellow" />
@@ -73,6 +73,7 @@ export const Experience = () => {
         <Technology name="React" color="lightblue" />
         <Technology name="TypeScript" color="blue" textColor="white" />
       </div>
+      */}
       <div className="job-header">
         <div className="job-title">Kode - Freelance</div>
         <div className="job-time">Enero 2024 - Marzo 2024</div>
@@ -84,11 +85,13 @@ export const Experience = () => {
       Realicé informes con datos de la plataforma de comercio online utilizando
       Google Analytics y Google Tag Manager. Estos informes se usaron para poder
       mejorar el flujo de usuarios por la web.
+      {/*
       <div className="technology-list">
         <Technology name="Odoo" color="purple" textColor="white" />
         <Technology name="Google Analytics" color="orange" />
         <Technology name="Google Tag Manager" color="blue" textColor="white" />
       </div>
+      */}
     </>
   )
 }
