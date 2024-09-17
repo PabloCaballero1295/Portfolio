@@ -7,12 +7,18 @@
 .job-header {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: var(--color-light-orange);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 0 0 5px;
+  width: fit-content;
+  padding: 0 1em;
 }
 
 .job-title {
   font-size: 1.8em;
   padding-bottom: 0.1em;
-  border-bottom: 2px solid black;
 }
 
 .job-time {

@@ -9,3 +9,15 @@
   background-color: var(--color-orange);
   color: var(--color-black);
 }
+
+@media (width < 480px) {
+  .section-title-container {
+    font-size: 1.5em;
+  }
+}
+
+@media (480px <= width < 768px) {
+  .section-title-container {
+    font-size: 1.75em;
+  }
+}

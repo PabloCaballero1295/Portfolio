@@ -1,5 +1,5 @@
 import { SectionTitle } from "../SectionTitle/SectionTitle"
-import { Technology } from "../Technology/Technology"
+//import { Technology } from "../Technology/Technology"
 
 import "./Experience.css"
 

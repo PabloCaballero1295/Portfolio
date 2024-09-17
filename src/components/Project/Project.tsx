@@ -44,7 +44,9 @@ export const Project = ({
             </button>
           </div>
         </div>
-        <img src={image} className="project-image" />
+        <div className="project-right">
+          <img src={image} className="project-image" />
+        </div>
       </div>
     </>
   )

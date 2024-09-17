@@ -52,10 +52,18 @@
   .hello-text {
     font-size: 1.5em;
   }
+
+  .name {
+    box-shadow: 4px 4px var(--color-orange);
+  }
 }
 
 @media (480px <= width < 768px) {
   .hello-text {
     font-size: 2em;
+  }
+
+  .name {
+    box-shadow: 6px 6px var(--color-orange);
   }
 }

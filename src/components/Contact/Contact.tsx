@@ -1,4 +1,4 @@
-import { SectionTitle } from "../SectionTitle/SectionTitle"
+//import { SectionTitle } from "../SectionTitle/SectionTitle"
 import "./Contact.css"
 
 export const Contact = () => {
@@ -15,10 +15,8 @@ export const Contact = () => {
 
   return (
     <div className="contact-container">
-      <SectionTitle title="Contacto" />
-      <div className="contact-text">
-        Para ponerse en contacto conmigo puede utlizar los siguientes métodos
-      </div>
+      {/*<SectionTitle title="Contacto" />*/}
+      <div className="contact-title">Contacto</div>
       <div className="contact-flex">
         <div className="contact-box">
           <img src="email.png" className="contact-img" />
@@ -30,21 +28,13 @@ export const Contact = () => {
           <div>+34 616 51 38 13</div>
         </div>
         <br />
-        <div className="contact-box">
-          <img
-            src="linkedin_logo.webp"
-            className="contact-img clickable"
-            onClick={openLinkedIn}
-          />
+        <div className="contact-box clickable" onClick={openLinkedIn}>
+          <img src="linkedin_logo.webp" className="contact-img" />
           LinkedIn
         </div>
         <br />
-        <div className="contact-box">
-          <img
-            src="github-logo.png"
-            className="contact-img clickable"
-            onClick={openGitHub}
-          />
+        <div className="contact-box clickable" onClick={openGitHub}>
+          <img src="github-logo.png" className="contact-img" />
           GitHub
         </div>
       </div>

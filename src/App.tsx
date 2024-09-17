@@ -19,9 +19,9 @@ function App() {
         <Experience />
         <div className="scroll-to" id="projects"></div>
         <Projects />
-        <div className="scroll-to" id="contact"></div>
-        <Contact />
       </div>
+      <div className="scroll-to" id="contact"></div>
+      <Contact />
     </>
   )
 }

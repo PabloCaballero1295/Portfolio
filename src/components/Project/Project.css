@@ -4,7 +4,7 @@
   box-shadow: 0 0 3px;
   padding: 1em;
   border-radius: 1em;
-  background-color: rgb(250, 240, 221);
+  background-color: var(--color-light-orange);
 }
 
 .project-image {
@@ -16,6 +16,10 @@
   flex-direction: column;
   flex-grow: 1;
   margin-right: 2em;
+}
+
+.project-right {
+  margin: auto;
 }
 
 .project-name {
@@ -30,6 +34,7 @@
 }
 
 .project-links {
+  margin-top: 1em;
   display: flex;
 }
 
@@ -47,11 +52,21 @@
 }
 
 @media (width < 768px) {
+  .project-links {
+    justify-content: center;
+  }
+
+  .project-left {
+    margin-right: 0;
+  }
+
   .project-container {
     flex-direction: column;
   }
   .project-image {
     margin: auto;
     margin-top: 1em;
+    width: 100%;
+    max-width: 15em;
   }
 }
