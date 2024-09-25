@@ -3,6 +3,7 @@ import { SectionTitle } from "../SectionTitle/SectionTitle"
 import "./Projects.css"
 
 import sudoku_web from "../../assets/Sudoku-web.png"
+import valorant_web from "../../assets/Valorant-web.png"
 
 const projects = [
   {
@@ -11,6 +12,13 @@ const projects = [
     image: sudoku_web,
     demoURL: "https://pablocaballero1295.github.io/Sudoku-web/",
     githubURL: "https://github.com/PabloCaballero1295/Sudoku-web",
+  },
+  {
+    name: "Valorant-web",
+    desc: "Es una web hecha con React y TypeScript que se utiliza para mostrar información sobre los agentes, mapas y armas que existen en Valorant. Los datos son obtenidos de Valorant-Api ",
+    image: valorant_web,
+    demoURL: "https://pablocaballero1295.github.io/Valorant-web/",
+    githubURL: "https://github.com/PabloCaballero1295/Valorant-web",
   },
 ]
 
@@ -22,13 +30,15 @@ export const Projects = () => {
         A continuación se muestran proyectos en los que he trabajado los últimos
         meses.
       </div>
-      <Project
-        image={projects[0].image}
-        name={projects[0].name}
-        desc={projects[0].desc}
-        demoURL={projects[0].demoURL}
-        githubURL={projects[0].githubURL}
-      />
+      {projects.map((project) => (
+        <Project
+          image={project.image}
+          name={project.name}
+          desc={project.desc}
+          demoURL={project.demoURL}
+          githubURL={project.githubURL}
+        />
+      ))}
     </div>
   )
 }

@@ -5,6 +5,7 @@
   padding: 1em;
   border-radius: 1em;
   background-color: var(--color-light-orange);
+  margin-bottom: 1em;
 }
 
 .project-image {
