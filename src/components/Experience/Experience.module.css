@@ -1,14 +1,18 @@
-.technology-list {
-  display: flex;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+.experience_wrapper {
+  background-color: var(--color-3);
+  padding-top: 5em;
 }
 
-.job-header {
+.jobs_wrapper {
+  margin-bottom: 8em;
+  margin-top: 6em;
+}
+
+.job_header {
   margin-top: 2rem;
   margin-bottom: 1rem;
   overflow: hidden;
-  background-color: var(--color-light-orange);
+  background-color: var(--color-4);
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   box-shadow: 0 0 5px;
@@ -16,12 +20,12 @@
   padding: 0 1em;
 }
 
-.job-title {
+.job_title {
   font-size: 1.8em;
   padding-bottom: 0.1em;
 }
 
-.job-time {
+.job_time {
   color: gray;
   font-size: 0.9em;
 }

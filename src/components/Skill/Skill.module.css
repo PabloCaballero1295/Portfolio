@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: rgba(1, 1, 1, 0.3);
+  color: white;
+  border-radius: 1em;
+  box-shadow: 0 0 20px var(--color-6);
+}
+
+.image {
+  width: 6em;
+  margin: auto;
+  margin-top: 1em;
+  display: block;
+}
+
+.name {
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}

@@ -112,10 +112,6 @@
   margin-top: 1em;
 }
 
-.contact_row_2 {
-  margin-top: 1rem;
-}
-
 .contact_info_wrapper {
   width: fit-content;
   display: flex;
@@ -129,12 +125,25 @@
   text-shadow: 0 0 10px white;
 }
 
+.contact_info_wrapper:hover .icon {
+  filter: drop-shadow(0 0 5px white);
+}
+
 .see_more_container {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+  margin-bottom: 2em;
+}
+
+.see_more_container:hover .see_more_text {
+  text-shadow: 0 0 10px white;
+}
+
+.see_more_container:hover .down_arrow {
+  filter: drop-shadow(0 0 0.75rem var(--color-5));
 }
 
 .icon {

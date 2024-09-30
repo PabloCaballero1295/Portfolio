@@ -1,4 +1,9 @@
+.about_wrapper {
+  background-color: var(--color-3);
+  padding-top: 4em;
+  padding-bottom: 10em;
+}
+
 .about_content {
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-top: 4rem;
 }

@@ -66,6 +66,13 @@ export const DropdownMenu = () => {
         </MenuItem>
         <MenuItem
           onClick={() => {
+            scrollToElement("skilss")
+          }}
+        >
+          Habilidades
+        </MenuItem>
+        <MenuItem
+          onClick={() => {
             scrollToElement("experience")
           }}
         >

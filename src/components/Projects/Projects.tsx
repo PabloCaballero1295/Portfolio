@@ -1,9 +1,10 @@
 import { Project } from "../Project/Project"
 import { SectionTitle } from "../SectionTitle/SectionTitle"
-import "./Projects.css"
+import styles from "./Projects.module.css"
 
 import sudoku_web from "../../assets/Sudoku-web.png"
 import valorant_web from "../../assets/Valorant-web.png"
+import WebIcon from "@mui/icons-material/Web"
 
 const projects = [
   {
@@ -24,21 +25,21 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div className="projects-container">
-      <SectionTitle title="Proyectos" />
-      <div className="projects-top-text">
-        A continuación se muestran proyectos en los que he trabajado los últimos
-        meses.
+    <div className={styles.wrapper}>
+      <div className="container">
+        <SectionTitle icon={WebIcon} title="Proyectos Personales" />
+        <div className={styles.projects_wrapper}>
+          {projects.map((project) => (
+            <Project
+              image={project.image}
+              name={project.name}
+              desc={project.desc}
+              demoURL={project.demoURL}
+              githubURL={project.githubURL}
+            />
+          ))}
+        </div>
       </div>
-      {projects.map((project) => (
-        <Project
-          image={project.image}
-          name={project.name}
-          desc={project.desc}
-          demoURL={project.demoURL}
-          githubURL={project.githubURL}
-        />
-      ))}
     </div>
   )
 }

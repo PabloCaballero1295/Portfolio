@@ -42,7 +42,7 @@ body {
 }
 
 .scroll-to {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 62px;
 }
 
 @media (width < 1024px) {

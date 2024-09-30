@@ -24,6 +24,7 @@ export const NavBar = () => {
         <div className={styles.navbar_right_content}>
           <NavBarButton text="Home" scrollTo="home" />
           <NavBarButton text="Sobre mí" scrollTo="about" />
+          <NavBarButton text="Habilidades" scrollTo="skills" />
           <NavBarButton text="Experiencia" scrollTo="experience" />
           <NavBarButton text="Proyectos" scrollTo="projects" />
           <NavBarButton text="Contacto" scrollTo="contact" />

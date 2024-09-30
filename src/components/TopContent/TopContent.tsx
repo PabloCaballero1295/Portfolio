@@ -80,7 +80,7 @@ export const TopContent = () => {
             </button>
           </div>
           <div className={styles.contact_wrapper}>
-            <div className={styles.contact_row_2}>
+            <div>
               <div
                 className={`${styles.contact_info_wrapper} ${styles.link}`}
                 onClick={copyMailToClipboard}
