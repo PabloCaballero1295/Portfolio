@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "Valorant-web",
-    desc: "Es una web hecha con React y TypeScript que se utiliza para mostrar información sobre los agentes, mapas y armas que existen en Valorant. Los datos son obtenidos de Valorant-Api ",
+    desc: "Es una web hecha con React y TypeScript que se utiliza para mostrar información sobre los agentes, mapas y armas que existen en Valorant. Los datos son obtenidos a través de un API llamada Valorant-Api ",
     image: valorant_web,
     demoURL: "https://pablocaballero1295.github.io/Valorant-web/",
     githubURL: "https://github.com/PabloCaballero1295/Valorant-web",

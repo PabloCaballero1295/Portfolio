@@ -2,13 +2,13 @@ import { SectionTitle } from "../SectionTitle/SectionTitle"
 
 import TFG_FILE from "../../assets/TFG_Pablo_Caballero.pdf"
 
-import "./About.css"
+import styles from "./About.module.css"
 
 export const About = () => {
   return (
     <div>
       <SectionTitle title="Sobre mí" />
-      <div className="about-content">
+      <div className={styles.about_content}>
         ¡Hola! mi nombre es Pablo Caballero y soy un desarrollador web
         apasionado en la creación de soluciones innovadores y también que sean
         responsive para adaptarse a todo tipo de dispositivos. Me considero un

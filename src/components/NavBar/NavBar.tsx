@@ -1,5 +1,5 @@
 import { NavBarButton } from "../NavBarButton/NavBarButton"
-import "./NavBar.css"
+import styles from "./NavBar.module.css"
 import { DropdownMenu } from "../DropdownMenu/DropdownMenu"
 
 export const NavBar = () => {
@@ -10,10 +10,10 @@ export const NavBar = () => {
     }
   }
   return (
-    <div className="navbar">
-      <div className="navbar-content">
+    <div className={styles.navbar}>
+      <div className={styles.navbar_content}>
         <div
-          className="navbar-left-content"
+          className={styles.navbar_left_content}
           onClick={() => {
             scrollToElement("home")
           }}
@@ -21,7 +21,7 @@ export const NavBar = () => {
           Pablo Caballero
         </div>
 
-        <div className="navbar-right-content">
+        <div className={styles.navbar_right_content}>
           <NavBarButton text="Home" scrollTo="home" />
           <NavBarButton text="Sobre mí" scrollTo="about" />
           <NavBarButton text="Experiencia" scrollTo="experience" />
@@ -29,7 +29,7 @@ export const NavBar = () => {
           <NavBarButton text="Contacto" scrollTo="contact" />
         </div>
 
-        <div className="navbar-right-content-mobile">
+        <div className={styles.navbar_right_content_mobile}>
           <DropdownMenu />
         </div>
       </div>

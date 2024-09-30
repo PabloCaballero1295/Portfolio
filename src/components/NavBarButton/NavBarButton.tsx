@@ -1,4 +1,4 @@
-import "./NavBarButton.css"
+import styles from "./NavBarButton.module.css"
 
 interface NavBarButtonProps {
   text: string
@@ -14,7 +14,10 @@ export const NavBarButton = ({ text, scrollTo }: NavBarButtonProps) => {
   }
 
   return (
-    <a className="navbar-button" onClick={() => scrollToElement(scrollTo)}>
+    <a
+      className={styles.navbar_button}
+      onClick={() => scrollToElement(scrollTo)}
+    >
       {text}
     </a>
   )
