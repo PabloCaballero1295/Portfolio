@@ -27,15 +27,3 @@
     font-size: 0.8em;
   }
 }
-
-@media (480px <= width < 768px) {
-  .skills_grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .skills_grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}

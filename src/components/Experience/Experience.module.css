@@ -1,6 +1,8 @@
 .experience_wrapper {
   background-color: var(--color-3);
   padding-top: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .jobs_wrapper {
@@ -28,4 +30,24 @@
 .job_time {
   color: gray;
   font-size: 0.9em;
+}
+
+.cards_wrapper {
+  margin-top: 5em;
+  margin-bottom: 8em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+@media (width < 480px) {
+  .cards_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (480px <= width < 768px) {
+  .cards_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

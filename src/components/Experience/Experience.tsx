@@ -1,14 +1,57 @@
 import { SectionTitle } from "../SectionTitle/SectionTitle"
-//import { Technology } from "../Technology/Technology"
 import WorkIcon from "@mui/icons-material/Work"
 
 import styles from "./Experience.module.css"
+import { JobCard } from "../JobCard/JobCard"
+
+import { experience as data } from "../../data/experience" // Importar el archivo JSON
 
 export const Experience = () => {
   return (
     <div className={styles.experience_wrapper}>
       <div className="container">
         <SectionTitle icon={WorkIcon} title="Experiencia" />
+        <div className={styles.cards_wrapper}>
+          {data &&
+            data.map((job) => (
+              <JobCard
+                key={job.id}
+                title={job.title}
+                company={job.company}
+                image={job.image}
+                period={job.period}
+                type={job.type}
+                text={job.text}
+                technologies={job.technologies}
+              />
+            ))}
+
+          {/*
+          <JobCard
+            title="Prácticas de empresa"
+            company="Turitop"
+            image={turitop}
+            period="Marzo 2018 - Junio 2018"
+            type="Prácticas"
+          />
+
+          <JobCard
+            title="Desarrollador web/iOS"
+            company="KODE"
+            image={kode}
+            period="Mayo 2021 - Enero 2023"
+            type="Indefinido - Híbrido"
+          />
+
+          <JobCard
+            title="Desarrollador web"
+            company="KODE"
+            image={kode}
+            period="Enero 2024 - Marzo 2024"
+            type="Freelance - Remoto"
+          />*/}
+        </div>
+        {/*
         <div className={styles.jobs_wrapper}>
           <div className={styles.job_header}>
             <div className={styles.job_title}>Práticas de empresa</div>
@@ -68,6 +111,7 @@ export const Experience = () => {
           utilizando Google Analytics y Google Tag Manager. Estos informes se
           usaron para poder mejorar el flujo de usuarios por la web.
         </div>
+        */}
       </div>
     </div>
   )

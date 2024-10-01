@@ -1,6 +1,6 @@
 import { SectionTitle } from "../SectionTitle/SectionTitle"
 
-import TFG_FILE from "../../assets/TFG_Pablo_Caballero.pdf"
+import TFG_FILE from "../../assets/PDF/TFG_Pablo_Caballero.pdf"
 import PersonIcon from "@mui/icons-material/Person"
 
 import styles from "./About.module.css"

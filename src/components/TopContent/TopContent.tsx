@@ -1,7 +1,7 @@
 import styles from "./TopContent.module.css"
 import image from "../../assets/web-design-3.png"
 
-import PABLO_CABALLERO_CV from "../../assets/Pablo_Caballero_CV.pdf"
+import PABLO_CABALLERO_CV from "../../assets/PDF/Pablo_Caballero_CV.pdf"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"

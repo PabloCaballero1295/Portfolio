@@ -27,7 +27,7 @@ export const Projects = () => {
   return (
     <div className={styles.wrapper}>
       <div className="container">
-        <SectionTitle icon={WebIcon} title="Proyectos Personales" />
+        <SectionTitle icon={WebIcon} title="Proyectos" />
         <div className={styles.projects_wrapper}>
           {projects.map((project) => (
             <Project
