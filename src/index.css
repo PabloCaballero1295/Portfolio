@@ -45,12 +45,14 @@ body {
   scroll-margin-top: 62px;
 }
 
+/*
 @media (width < 1024px) {
   .container {
     padding: 0 1em;
     padding-bottom: 2em;
   }
 }
+*/
 
 /*
 @media (min-width: 1024px) {

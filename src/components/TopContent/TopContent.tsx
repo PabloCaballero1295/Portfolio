@@ -66,12 +66,7 @@ export const TopContent = () => {
             <div>Soy</div> <div className={styles.name}>Pablo Caballero</div>
           </div>
           <div className={styles.workstation}>Desarrollador web</div>
-          <div>
-            {/*
-            <button className={styles.contact_button} onClick={scrollToContact}>
-              Contacto
-            </button>
-            */}
+          <div className={styles.buttons_row}>
             <button className={styles.about_button} onClick={scrollToAbout}>
               Sobre mí
             </button>
@@ -80,39 +75,37 @@ export const TopContent = () => {
             </button>
           </div>
           <div className={styles.contact_wrapper}>
-            <div>
-              <div
-                className={`${styles.contact_info_wrapper} ${styles.link}`}
-                onClick={copyMailToClipboard}
-                title="Copiar correo electrónico"
-              >
-                <EmailIcon className={styles.icon} fontSize="large" />{" "}
-                <span>pablocaballero1295@gmail.com</span>
-              </div>
-              <div
-                className={`${styles.contact_info_wrapper} ${styles.link}`}
-                onClick={copyPhoneToClipboard}
-                title="Copiar Teléfono"
-              >
-                <PhoneIcon className={styles.icon} fontSize="large" />
-                <span>+34 616 51 38 13</span>
-              </div>
-              <div
-                className={`${styles.contact_info_wrapper} ${styles.link}`}
-                onClick={openLinkedIn}
-                title="Visitar mi LinkedIn"
-              >
-                <LinkedInIcon className={styles.icon} fontSize="large" />
-                <span>LinkedIn</span>
-              </div>
-              <div
-                className={`${styles.contact_info_wrapper} ${styles.link}`}
-                onClick={openGitHub}
-                title="Visitar mi GitHub"
-              >
-                <GitHubIcon className={styles.icon} fontSize="large" />
-                <span>GitHub</span>
-              </div>
+            <div
+              className={`${styles.contact_info_wrapper} ${styles.link}`}
+              onClick={copyMailToClipboard}
+              title="Copiar correo electrónico"
+            >
+              <EmailIcon className={styles.icon} fontSize="large" />{" "}
+              <span>pablocaballero1295@gmail.com</span>
+            </div>
+            <div
+              className={`${styles.contact_info_wrapper} ${styles.link}`}
+              onClick={copyPhoneToClipboard}
+              title="Copiar Teléfono"
+            >
+              <PhoneIcon className={styles.icon} fontSize="large" />
+              <span>+34 616 51 38 13</span>
+            </div>
+            <div
+              className={`${styles.contact_info_wrapper} ${styles.link}`}
+              onClick={openLinkedIn}
+              title="Visitar mi LinkedIn"
+            >
+              <LinkedInIcon className={styles.icon} fontSize="large" />
+              <span>LinkedIn</span>
+            </div>
+            <div
+              className={`${styles.contact_info_wrapper} ${styles.link}`}
+              onClick={openGitHub}
+              title="Visitar mi GitHub"
+            >
+              <GitHubIcon className={styles.icon} fontSize="large" />
+              <span>GitHub</span>
             </div>
           </div>
         </div>

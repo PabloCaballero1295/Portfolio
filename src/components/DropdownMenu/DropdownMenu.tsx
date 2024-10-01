@@ -26,16 +26,6 @@ export const DropdownMenu = () => {
 
   return (
     <div>
-      {/*
-    <Button
-      id="basic-button"
-      aria-controls={open ? 'basic-menu' : undefined}
-      aria-haspopup="true"
-      aria-expanded={open ? 'true' : undefined}
-      onClick={handleClick}
-    >
-      Dashboard
-    </Button>*/}
       <i
         ref={menuButtonRef}
         className="fa-solid fa-bars"
@@ -66,7 +56,7 @@ export const DropdownMenu = () => {
         </MenuItem>
         <MenuItem
           onClick={() => {
-            scrollToElement("skilss")
+            scrollToElement("skills")
           }}
         >
           Habilidades
