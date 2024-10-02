@@ -11,10 +11,14 @@ export const About = () => {
       <div className="container">
         <SectionTitle icon={PersonIcon} title="Sobre mí" />
         <div className={styles.about_content}>
-          ¡Hola! mi nombre es Pablo Caballero y soy un desarrollador web
-          apasionado en la creación de páginas web. Me considero un
-          desarrollador con una gran capacidad de adaptación, que puede aprender
-          a utilizar muchos lenguajes o frameworks en poco tiempo.
+          ¡Hola! mi nombre es Pablo Caballero y soy un desarrollador apasionado
+          en la creación de páginas web, aunque también tengo experiencia en el
+          desarollo de aplicaciones móviles y de videojuegos.
+          <br />
+          <br />
+          Me considero un desarrollador con una gran capacidad de adaptación,
+          que puede aprender a utilizar muchos lenguajes o frameworks en poco
+          tiempo.
           <br />
           <br />
           Realicé mis estudios en la universidad de La Laguna donde logré
