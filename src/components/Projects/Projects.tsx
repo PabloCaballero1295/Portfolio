@@ -14,7 +14,10 @@ const projects = [
     name: "Sudoku",
     desc: "Es una web hecha con React y TypeScript que nos permite jugar una partida de Sudoku. Se han hecho indicadores visuales para mostrar la casilla seleccionada, las columnas, las filas y regiones que se ven afectadas al colocar un número en la casilla. ",
     image: sudoku_web,
-    technologies: [typescript, react],
+    technologies: [
+      { name: "Typescript", image: typescript },
+      { name: "React", image: react },
+    ],
     demoURL: "https://pablocaballero1295.github.io/Sudoku-web/",
     githubURL: "https://github.com/PabloCaballero1295/Sudoku-web",
   },
@@ -22,7 +25,10 @@ const projects = [
     name: "Valorant",
     desc: "Es una web hecha con React y TypeScript que se utiliza para mostrar información sobre los agentes, mapas y armas que existen en Valorant. Los datos son obtenidos a través de un API llamada Valorant-Api ",
     image: valorant_web,
-    technologies: [typescript, react],
+    technologies: [
+      { name: "Typescript", image: typescript },
+      { name: "React", image: react },
+    ],
     demoURL: "https://pablocaballero1295.github.io/Valorant-web/",
     githubURL: "https://github.com/PabloCaballero1295/Valorant-web",
   },

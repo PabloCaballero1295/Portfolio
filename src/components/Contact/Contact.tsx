@@ -1,4 +1,3 @@
-//import { SectionTitle } from "../SectionTitle/SectionTitle"
 import styles from "./Contact.module.css"
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
@@ -23,30 +22,28 @@ export const Contact = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.inner_wrapper}>
-        {/*<div className={styles.contact_title}>Contacto</div>*/}
         <SectionTitle title="Contacto" />
         <div className={styles.contact_flex}>
           <div className={styles.contact_box}>
-            <EmailIcon />
+            <EmailIcon fontSize="large" className={styles.icon} />
             pablocaballero1295@gmail.com
           </div>
           <div className={styles.contact_box}>
-            <PhoneIcon />
+            <PhoneIcon fontSize="large" className={styles.icon} />
             <div>+34 616 51 38 13</div>
           </div>
           <div
             className={`${styles.contact_box} ${styles.clickable}`}
             onClick={openLinkedIn}
           >
-            <LinkedInIcon />
-            {/*<img src={linkedin_icon} className={styles.contact_img} />*/}
+            <LinkedInIcon fontSize="large" className={styles.icon} />
             LinkedIn
           </div>
           <div
             className={`${styles.contact_box} ${styles.clickable}`}
             onClick={openGitHub}
           >
-            <GitHubIcon />
+            <GitHubIcon fontSize="large" className={styles.icon} />
             GitHub
           </div>
         </div>

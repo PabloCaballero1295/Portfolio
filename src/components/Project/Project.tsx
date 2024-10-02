@@ -1,12 +1,13 @@
 import styles from "./Project.module.css"
 import github from "../../assets/technologies/github.png"
 import OpenInNewIcon from "@mui/icons-material/OpenInNew"
+import { TechnologyType } from "../../types/Technology"
 
 interface ProjectProps {
   image: string
   name: string
   desc: string
-  technologies: string[]
+  technologies: TechnologyType[]
   demoURL: string
   githubURL: string
 }
@@ -25,12 +26,17 @@ export const Project = ({
   return (
     <>
       <div className={styles.wrapper}>
-        <img src={image} className={styles.image} />
+        <img src={image} className={styles.image} alt={name} />
         <div className={styles.project_info_wrapper}>
           <div className={styles.name}>{name}</div>
           <div className={styles.technologies_wrapper}>
-            {technologies.map((tec) => (
-              <img className={styles.technology} src={tec} />
+            {technologies.map((tec, index) => (
+              <img
+                key={index}
+                className={styles.technology}
+                src={tec.image}
+                alt={tec.name}
+              />
             ))}
           </div>
           <div className={styles.buttons}>
@@ -52,38 +58,11 @@ export const Project = ({
                 OpenURL(githubURL)
               }}
             >
-              <img className={styles.button_icon} src={github} />
+              <img className={styles.button_icon} src={github} alt="GitHub" />
               Github
             </button>
           </div>
         </div>
-        {/*
-        <div className="project-left">
-          <div className="project-name">{name}</div>
-          <div className="project-description">{desc}</div>
-          <div className="project-links">
-            <button
-              className="custom-button"
-              onClick={() => {
-                OpenURL(demoURL)
-              }}
-            >
-              Demo
-            </button>
-            <button
-              className="custom-button github-button"
-              onClick={() => {
-                OpenURL(githubURL)
-              }}
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div className="project-right">
-          <img src={image} className="project-image" />
-        </div>
-        */}
       </div>
     </>
   )

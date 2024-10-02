@@ -67,10 +67,18 @@ export const TopContent = () => {
           </div>
           <div className={styles.workstation}>Desarrollador web</div>
           <div className={styles.buttons_row}>
-            <button className={styles.about_button} onClick={scrollToAbout}>
+            <button
+              className={styles.about_button}
+              onClick={scrollToAbout}
+              title="Ir a 'Sobre mí'"
+            >
               Sobre mí
             </button>
-            <button className={styles.get_cv_button} onClick={getCV}>
+            <button
+              className={styles.get_cv_button}
+              onClick={getCV}
+              title="Abrir CV"
+            >
               Obtener CV
             </button>
           </div>
@@ -110,11 +118,15 @@ export const TopContent = () => {
           </div>
         </div>
         <div className={styles.my_image_wrapper}>
-          <img src={image} className={styles.my_image} />
+          <img src={image} alt="Programación" className={styles.my_image} />
         </div>
       </div>
 
-      <div className={styles.see_more_container} onClick={scrollToAbout}>
+      <div
+        className={styles.see_more_container}
+        onClick={scrollToAbout}
+        title="Ver siguiente sección"
+      >
         <div className={styles.see_more_text}>Ver más</div>
         <div>
           <ArrowDownwardIcon

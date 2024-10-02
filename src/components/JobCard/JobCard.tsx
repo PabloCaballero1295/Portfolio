@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Modal from "@mui/material/Modal"
 import CloseIcon from "@mui/icons-material/Close"
-
+import { TechnologyType } from "../../types/Technology"
 import styles from "./JobCard.module.css"
 
 interface JobCardProps {
@@ -11,7 +11,7 @@ interface JobCardProps {
   period: string
   type: string
   text: string
-  technologies: string[]
+  technologies: TechnologyType[]
 }
 
 export const JobCard = ({
@@ -31,12 +31,10 @@ export const JobCard = ({
     setOpen(false)
   }
 
-  console.log(technologies)
-
   return (
     <div className={styles.wrapper}>
       <div onClick={handleOpen}>
-        <img className={styles.image} src={image} />
+        <img className={styles.image} src={image} alt={company} />
         <div className={styles.info_wrapper}>
           <div className={styles.title}>{title}</div>
           <div className={styles.company}>{company}</div>
@@ -50,14 +48,15 @@ export const JobCard = ({
             <CloseIcon fontSize="large" />
           </div>
           <div className={styles.modal_content}>
-            <img className={styles.image} src={image} />
+            <img className={styles.image} src={image} alt={company} />
 
             <div className={styles.technologies_wrapper}>
               {technologies.map((tec, index) => (
                 <img
                   key={index}
                   className={styles.technology_image}
-                  src={tec}
+                  src={tec.image}
+                  alt={tec.name}
                 />
               ))}
             </div>
