@@ -1,9 +1,12 @@
 //import { SectionTitle } from "../SectionTitle/SectionTitle"
-import "./Contact.css"
-import email_icon from "../../assets/email.png"
-import phone_icon from "../../assets/phone.png"
-import linkedin_icon from "../../assets/linkedin_logo.webp"
-import github_icon from "../../assets/github-logo.png"
+import styles from "./Contact.module.css"
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import EmailIcon from "@mui/icons-material/Email"
+import PhoneIcon from "@mui/icons-material/Phone"
+import GitHubIcon from "@mui/icons-material/GitHub"
+
+import { SectionTitle } from "../SectionTitle/SectionTitle"
 
 export const Contact = () => {
   const openLinkedIn = () => {
@@ -18,30 +21,38 @@ export const Contact = () => {
   }
 
   return (
-    <div className="contact-container">
-      {/*<SectionTitle title="Contacto" />*/}
-      <div className="contact-title">Contacto</div>
-      <div className="contact-flex">
-        <div className="contact-box">
-          <img src={email_icon} className="contact-img" />
-          pablocaballero1295@gmail.com
-        </div>
-        <br />
-        <div className="contact-box">
-          <img src={phone_icon} className="contact-img" />
-          <div>+34 616 51 38 13</div>
-        </div>
-        <br />
-        <div className="contact-box clickable" onClick={openLinkedIn}>
-          <img src={linkedin_icon} className="contact-img" />
-          LinkedIn
-        </div>
-        <br />
-        <div className="contact-box clickable" onClick={openGitHub}>
-          <img src={github_icon} className="contact-img" />
-          GitHub
+    <div className={styles.wrapper}>
+      <div className={styles.inner_wrapper}>
+        {/*<div className={styles.contact_title}>Contacto</div>*/}
+        <SectionTitle title="Contacto" />
+        <div className={styles.contact_flex}>
+          <div className={styles.contact_box}>
+            <EmailIcon />
+            pablocaballero1295@gmail.com
+          </div>
+          <div className={styles.contact_box}>
+            <PhoneIcon />
+            <div>+34 616 51 38 13</div>
+          </div>
+          <div
+            className={`${styles.contact_box} ${styles.clickable}`}
+            onClick={openLinkedIn}
+          >
+            <LinkedInIcon />
+            {/*<img src={linkedin_icon} className={styles.contact_img} />*/}
+            LinkedIn
+          </div>
+          <div
+            className={`${styles.contact_box} ${styles.clickable}`}
+            onClick={openGitHub}
+          >
+            <GitHubIcon />
+            GitHub
+          </div>
         </div>
       </div>
+      <div className={styles.line} />
+      <div className={styles.bottom_content}>Hecho por Pablo Caballero</div>
     </div>
   )
 }

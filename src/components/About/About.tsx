@@ -12,8 +12,7 @@ export const About = () => {
         <SectionTitle icon={PersonIcon} title="Sobre mí" />
         <div className={styles.about_content}>
           ¡Hola! mi nombre es Pablo Caballero y soy un desarrollador web
-          apasionado en la creación de soluciones innovadores y también que sean
-          responsive para adaptarse a todo tipo de dispositivos. Me considero un
+          apasionado en la creación de páginas web. Me considero un
           desarrollador con una gran capacidad de adaptación, que puede aprender
           a utilizar muchos lenguajes o frameworks en poco tiempo.
           <br />
@@ -33,11 +32,10 @@ export const About = () => {
           <br />
           <br />
           Hablo español nativo y en cuanto al inglés me considero que tengo un
-          nivel medio. Soy una persona que consume mucho contenido audiovisual
-          en inglés y casi todas las consultas que uno puede hacer en internet
-          las hago en ese idioma. Además, he trabajado un par de años en el
-          sector turístico y he tenido que comunicarme con personas de diversas
-          nacionalidades haciendo uso del inglés.
+          nivel medio. Soy una persona que lee y ve contenido en inglés. Además,
+          como he trabajado un par de años en el sector turístico, he podido
+          poner en práctica lo que he aprendido de inglés en todos estos años.
+          inglés.
         </div>
       </div>
     </div>
