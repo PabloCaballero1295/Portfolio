@@ -1,0 +1,65 @@
+.wrapper {
+  width: 100%;
+  max-width: 20em;
+  border-radius: 1em;
+  background-color: var(--color-1);
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 10px 20px var(--color-1);
+  margin: auto;
+}
+
+.project_info_wrapper {
+  padding: 1em;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.technologies_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.technology {
+  width: 2em;
+  margin: 0 0.25em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button_icon {
+  width: 1em;
+
+  margin-right: 0.5em;
+}
+
+.custom_button {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  border: none;
+  background: var(--color-2);
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+@media (480px <= width < 768px) {
+  .custom_button {
+    font-size: 0.9em;
+  }
+}

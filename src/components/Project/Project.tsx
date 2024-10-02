@@ -1,9 +1,12 @@
-import "./Project.css"
+import styles from "./Project.module.css"
+import github from "../../assets/technologies/github.png"
+import OpenInNewIcon from "@mui/icons-material/OpenInNew"
 
 interface ProjectProps {
   image: string
   name: string
   desc: string
+  technologies: string[]
   demoURL: string
   githubURL: string
 }
@@ -11,8 +14,8 @@ interface ProjectProps {
 export const Project = ({
   image,
   name,
-  desc,
   demoURL,
+  technologies,
   githubURL,
 }: ProjectProps) => {
   const OpenURL = (url: string) => {
@@ -21,7 +24,40 @@ export const Project = ({
 
   return (
     <>
-      <div className="project-container">
+      <div className={styles.wrapper}>
+        <img src={image} className={styles.image} />
+        <div className={styles.project_info_wrapper}>
+          <div className={styles.name}>{name}</div>
+          <div className={styles.technologies_wrapper}>
+            {technologies.map((tec) => (
+              <img className={styles.technology} src={tec} />
+            ))}
+          </div>
+          <div className={styles.buttons}>
+            <button
+              className={styles.custom_button}
+              onClick={() => {
+                OpenURL(demoURL)
+              }}
+            >
+              <OpenInNewIcon
+                className={styles.button_icon}
+                sx={{ fontSize: "1em" }}
+              />
+              Demo
+            </button>
+            <button
+              className={styles.custom_button}
+              onClick={() => {
+                OpenURL(githubURL)
+              }}
+            >
+              <img className={styles.button_icon} src={github} />
+              Github
+            </button>
+          </div>
+        </div>
+        {/*
         <div className="project-left">
           <div className="project-name">{name}</div>
           <div className="project-description">{desc}</div>
@@ -47,6 +83,7 @@ export const Project = ({
         <div className="project-right">
           <img src={image} className="project-image" />
         </div>
+        */}
       </div>
     </>
   )
