@@ -4,12 +4,24 @@ import styles from "./Projects.module.css"
 
 import sudoku_web from "../../assets/Sudoku-web.png"
 import valorant_web from "../../assets/Valorant-web.png"
+import board from "../../assets/board.png"
 import WebIcon from "@mui/icons-material/Web"
 
 import typescript from "../../assets/technologies/typescript.png"
 import react from "../../assets/technologies/react.png"
 
 const projects = [
+  {
+    name: "Task board",
+    desc: "Es una web que contiene un tablero para organizar tareas con diferentes columns",
+    image: board,
+    technologies: [
+      { name: "Typescript", image: typescript },
+      { name: "React", image: react },
+    ],
+    demoURL: "https://pablocaballero1295.github.io/board_task/",
+    githubURL: "https://github.com/PabloCaballero1295/board_task",
+  },
   {
     name: "Sudoku",
     desc: "Es una web hecha con React y TypeScript que nos permite jugar una partida de Sudoku. Se han hecho indicadores visuales para mostrar la casilla seleccionada, las columnas, las filas y regiones que se ven afectadas al colocar un número en la casilla. ",
