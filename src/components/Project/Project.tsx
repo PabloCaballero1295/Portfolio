@@ -15,6 +15,7 @@ interface ProjectProps {
 export const Project = ({
   image,
   name,
+  desc,
   demoURL,
   technologies,
   githubURL,
@@ -39,6 +40,7 @@ export const Project = ({
               />
             ))}
           </div>
+          <div className={styles.description}>{desc}</div>
           <div className={styles.buttons}>
             <button
               className={styles.custom_button}

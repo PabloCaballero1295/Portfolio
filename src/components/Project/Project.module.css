@@ -1,16 +1,22 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 20em;
+  max-width: 25em;
   border-radius: 1em;
   background-color: var(--color-1);
   overflow: hidden;
   color: white;
   box-shadow: 0 10px 20px var(--color-1);
   margin: auto;
+  height: 100%;
 }
 
 .project_info_wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 1em;
+  flex: 1;
 }
 
 .image {
@@ -34,11 +40,17 @@
 .technology {
   width: 2em;
   margin: 0 0.25em;
+  background-color: white;
+}
+
+.description {
+  flex: 1;
 }
 
 .buttons {
   display: flex;
   justify-content: space-around;
+  margin-top: 1em;
 }
 
 .button_icon {
